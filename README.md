@@ -16,4 +16,21 @@ day1
 
     构建工作目录
     同步到git
+
+
+day2
+    编写web app骨架
+    1 导入logging模块
+        基础配置 logging.basicConfig(level=logging.INFO)
+        DEBUG：详细的信息,通常只出现在诊断问题上
+        INFO：确认一切按预期运行
+        WARNING：一个迹象表明,一些意想不到的事情发生了,或表明一些问题在不久的将来(例如。磁盘空间低”)。这个软件还能按预期工作。
+        ERROR：更严重的问题,软件没能执行一些功能
+        CRITICAL：一个严重的错误,这表明程序本身可能无法继续运行
     
+    2 通过async def将index标记成一个coroutine（协程），接受一个request实例为唯一参数，翻回一个response实例
+
+    3 创建一个application实例，并用特定的http方法和路径注册请求处理程序
+
+    4 通过run_app()调用运行程序
+
